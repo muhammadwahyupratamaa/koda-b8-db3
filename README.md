@@ -1,19 +1,27 @@
-# SQL Query postgreSQL Mengambil data
+# SQL Query PostgreSQL Mengambil Data
 
-## Ini merupakan penjelasan query sql untuk mengambil data sesuai kriteria dan ambil data degan relasi tabel lain dengan JOIN
+## Penjelasan
 
-### Screenshoot Query1
-![alt text](Querry1.png)
+Repository ini berisi beberapa query SQL untuk mengambil data berdasarkan kriteria tertentu serta menampilkan data dari beberapa tabel yang saling berelasi menggunakan `JOIN`.
+
+---
+
+## Screenshot Query 1
+
+![Query 1](Querry1.png)
 
 Berisi beberapa query SQL dasar menggunakan:
 
 - `WHERE`
 - `LIKE`
 - `BETWEEN`
-- `COUNT()` 
+- `COUNT()`
 
-### Screenshoot Query2
-![alt text](Querry2.png)
+---
+
+## Screenshot Query 2
+
+![Query 2](Querry2.png)
 
 Pada query ini ditampilkan data aktor beserta peran (`role`), judul film, dan `rankscore` dengan menggabungkan beberapa tabel yang saling berelasi menggunakan `JOIN`.
 
@@ -42,14 +50,27 @@ Contoh:
 ```sql
 CONCAT("a"."first_name", ' ', "a"."last_name") AS "nama_actor"
 ```
-```
+
+---
 
 ## Screenshot Query 3
 
-| Data Director dengan Jumlah Genre | Data Actor dengan Role > 5 | Movies dengan Genres |
-| :---: | :---: | :---: |
-| <img src="./1.png" width="300"> | <img src="./2.png" width="300"> | <img src="./3.png" width="300"> |
+### Data Director dengan Jumlah Genre
 
-| Data Director Paling Produktif | Tahun Tersibuk |
-| :---: | :---: |
-| <img src="./4.png" width="350"> | <img src="./5.png" width="350"> |
+![Director](1.png)
+
+### Data Actor dengan Role > 5
+
+![Actor](2.png)
+
+### Movies dengan Genres dalam Satu Kolom
+
+![Movies](3.png)
+
+### Data Director Paling Produktif
+
+![Director Produktif](4.png)
+
+### Tahun Tersibuk dengan Jumlah Movies
+
+![Tahun Tersibuk](5.png)
